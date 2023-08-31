@@ -1,0 +1,156 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 90vh;
+  
+   background-color: aqua; 
+    }
+
+/* Main box */
+
+.wrapper {
+  width: 500px;
+  background: rgb(134, 223, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(134, 223, 224, 1) 30%,
+    rgba(79, 169, 231, 1) 74%
+  );
+
+  padding: 3.5rem;
+  flex-direction: column;
+  border-radius: 90px;
+  -webkit-box-shadow: 0px 1px 66px -30px rgba(238, 15, 15, 0.75);
+  -moz-box-shadow: 0px 1px 66px -30px rgba(235, 6, 6, 0.75);
+  box-shadow: 0px 1px 66px -30px rgba(201, 12, 12, 0.75);
+}
+
+/* Clock image */
+
+.wrapper img {
+  max-width: 110px;
+}
+
+/* Time text */
+
+.wrapper h1 {
+  font-size: 3rem;
+  margin: 2.9rem 0;
+}
+
+/* Main content */
+
+.wrapper .content {
+  width: 120%;
+  justify-content: space-evenly;
+}
+
+/* Disable content menu */
+
+.wrapper .content.disable {
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Hour Minute AM/PM */
+
+.content .column {
+  border-radius: 6px;
+  border: 1px solid #999;
+  width: calc(100% / 3 - 5px);
+}
+
+.content .column select {
+ 
+
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: rgb(218, 239, 244);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Set Button */
+
+.wrapper button,
+#resumeBtn {
+  width: 90%;
+  margin-top: 25px;
+  font-size: 1.5rem;
+ 
+ 
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgb(10, 37, 246);
+  
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+/* Click effect on button */
+
+.wrapper button:active,
+#resumeBtn:active {
+  background-color: rgb(174, 52, 52);
+  font-size: 1.5rem;
+ 
+}
+
+/* Resume button */
+
+#resumeBtn {
+  background-color: rgb(174, 99, 191);
+  width: 210px;
+}
+
+/* Welcome Back Screen */
+
+.welcomeBack {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(86, 145, 224);
+  background: radial-gradient(
+    circle,
+    rgba(86, 145, 224, 1) 17%,
+    rgba(0, 117, 255, 1) 73%
+  );
+  z-index: 10;
+  flex-direction: column;
+  
+}
+
+.d-none {
+  display: none;
+}
+
+/* Media  */
+
+@media screen and (max-width: 00px) {
+  .wrapper {
+    width: 95vw;
+  }
+
+  .welcomeBack {
+    font-size: 0.7rem;
+  }
+}

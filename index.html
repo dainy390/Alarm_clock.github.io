@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+  <head>
+   
+    <title>Alarm clock</title>
+  
+    <!--   CSS   -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+   
+    <!-- Welcome again -->
+    <div class="d-none" id="welcome again">
+      <h1>Hey! Welcome again</h1>
+      <button id="resumeBtn">Resume alarm time</button>
+    </div>
+
+    <!-- Main box -->
+    <div class="wrapper flex">
+      <img src="files/clock.svg" alt="" />
+    
+      <!-- Temporary time -->
+      <h1 id="currentTime">00:00:00</h1>
+     
+      <!-- Main content -->
+      <div id="content">
+        
+        <!-- Hour area -->
+        <div class="column">
+          <select id="hour">
+            <option value="Hour" selected hidden>Hour</option>
+          </select>
+        </div>
+        
+        <!-- Minute area -->
+        <div class="column">
+          <select id="minute">
+            <option value="Minute" selected hidden>Minute</option>
+          </select>
+        </div>
+       
+        <!-- AM/PM area -->
+        <div class="column">
+          <select id="ampm">
+            <option value="AM/PM" selected hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- alarm Button set -->
+      <button id="setBtn"></button>
+      
+      <!-- Alarm time indicator -->
+      <p id="alarmText"></p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
